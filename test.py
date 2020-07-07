@@ -219,29 +219,7 @@ for link in links:
         print("Restaurant : "+restaurant_name)
         note = soup.find_all(class_="r2Cf69qf")[0].get_text().replace(',','.')
         print("Note : "+note)
-        '''
-        classement = soup.find_all(class_="restaurants-detail-overview-cards-RatingsOverviewCard__ranking--17CmN")[0].get_text()
-        print(classement)
-        nb_avis = soup.find_all(class_="restaurants-detail-overview-cards-RatingsOverviewCard__ratingCount--DFxkG")[0].get_text().replace('avis', '')
-        nb_avis = re.sub(r"\s+", '', nb_avis)
-        print("Nombre d'avis : "+nb_avis)
-        excellent = soup.find_all(class_="row_num is-shown-at-tablet")[0].get_text()
-        print("Excellent : "+excellent)
-        tresbon = soup.find_all(class_="row_num is-shown-at-tablet")[1].get_text()
-        print("Tres bon : "+tresbon)
-        moyen = soup.find_all(class_="row_num is-shown-at-tablet")[2].get_text()
-        print("Moyen : "+moyen)
-        mediocre = soup.find_all(class_="row_num is-shown-at-tablet")[3].get_text()
-        print("Mediocre : "+mediocre)
-        horrible = soup.find_all(class_="row_num is-shown-at-tablet")[4].get_text()
-        print("Horrible : "+horrible)
-        cuisine = get_note(soup.find_all(class_="ui_bubble_rating")[2].get("class")[1])
-        print("Cuisine : "+cuisine)
-        service = get_note(soup.find_all(class_="ui_bubble_rating")[3].get("class")[1])
-        print("Service : "+service)
-        rapport = get_note(soup.find_all(class_="ui_bubble_rating")[4].get("class")[1])
-        print("Rapport qualite-prix : "+str(rapport))
-        '''
+       
         page = 0
         # old 
         while page <= 1:
